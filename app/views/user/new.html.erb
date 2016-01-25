@@ -1,0 +1,6 @@
+<%= form_for @user, url: new_user_path, html: { multipart: true } do |form| %>
+  <%= form.label :Username %>
+  <%= form.text_field :username %>
+  <%= form.file_field :avatar %>
+  <%= form.submit :create %>
+<% end %>
