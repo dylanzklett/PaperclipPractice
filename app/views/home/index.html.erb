@@ -1,1 +1,6 @@
 <%=link_to "Add Image!", new_user_path %>
+
+<% @users.each do |f| -%>
+  <%= f.username  %>
+  <%= image_tag f.avatar.url(:medium) %>
+<% end %>
